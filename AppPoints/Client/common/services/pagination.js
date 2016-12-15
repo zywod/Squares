@@ -12,8 +12,8 @@
             reverse: false,
             sortingOrder: 'x'
         }; 
-         
-         
+          
+          
         paginator.initPagination = function (data) {
             if (data != undefined ) {
                 paginator.filteredItems = data;
