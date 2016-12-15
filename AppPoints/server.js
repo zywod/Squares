@@ -7,7 +7,7 @@ var routesApi = require('./api/routes/index');
 var app = express();
 
 app.use(bodyParser.urlencoded({ limit: '50mb', extended: false  }));
-app.use(bodyParser.json(({ type: 'application/json', limit: '50mb' })));
+app.use(bodyParser.json(({limit: '50mb' })));
 
 
 app.use(express.static(path.join(__dirname, 'client')));

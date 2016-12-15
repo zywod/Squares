@@ -76,16 +76,17 @@ module.exports.getList = function (req, res) {
 
 
 module.exports.deleteList = function (req, res) {
-    ListOfPoints.findByIdAndRemove({
+    ListOfPoints.remove({
         _id: req.params.list_id
     },
-        function (err, res) {
+        function (err) {
             if (err) {
                 res.send(err);
                 res.status(404);
             }
-           
+
             res.json({ message: 'Successfully deleted' });
+            res.status(200);
         });
 };
 

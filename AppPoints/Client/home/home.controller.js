@@ -21,12 +21,20 @@
             }
 
             $scope.deleteList = function (listId) {
-                dataService.delete({ list_id: listId }, function (res) {
-                    //entry.$delete({ list_id: entry._id }, function (result) {
-                    //    getItems();
-                    //});
-                }, function(err) {
+                //var entry = dataService.delete({ list_id: listId }, function () {
+                //    entry.$delete({ list_id: entry._id }, function (result) {
+                //        getItems();
+                //    });
+                //});
+
+                dataService.delete({ list_id: listId }, function () {
+                    getItems();
                 });
+
+
+
+
+
             }
 
 
