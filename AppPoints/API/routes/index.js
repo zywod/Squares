@@ -3,11 +3,9 @@ var jwt = require('express-jwt');
 var router = express.Router();
 var operations = require('../controllers/operations');
 
-// middleware to use for all requests
+
 router.use(function (req, res, next) {
-    // do logging
-    console.log('Something is happening.');
-    next(); // make sure we go to the next routes and don't stop here
+    next();
 });
 
 
