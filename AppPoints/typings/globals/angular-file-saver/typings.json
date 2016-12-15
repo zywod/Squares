@@ -1,0 +1,8 @@
+{
+  "resolution": "main",
+  "tree": {
+    "src": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/35d98e9ef47d52d426d45fadd8b064ed35cc2df7/angular-file-saver/index.d.ts",
+    "raw": "registry:dt/angular-file-saver#1.2.0+20161122001003",
+    "typings": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/35d98e9ef47d52d426d45fadd8b064ed35cc2df7/angular-file-saver/index.d.ts"
+  }
+}

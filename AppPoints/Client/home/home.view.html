@@ -1,0 +1,45 @@
+﻿
+
+<div class="panel-heading">
+    <div class="panel-heading clearfix">
+        <h3 class="panel-title">
+            <span class="glyphicon glyphicon-bookmark"></span> Lists of points
+        </h3>
+        <hr/>
+        <div class="btn-group pull-right">
+            <button type="button" ng-click="createList()" class="btn btn-default">New List</button>
+        </div>
+        
+
+    </div>
+</div>
+
+
+
+
+<div class="panel-body">
+    <table class="table table-striped table-bordered table-list">
+        <thead>
+        <tr>
+            <th class="hidden-xs">#</th>
+            <th>Name of list</th>
+            <th>Number of points</th>
+            <th><em class="fa fa-cog"></em></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="(id, list) in lists">
+            <td class="hidden-xs">{{$index +1}}</td>
+            <td>
+                <a ng-click="editList(list._id)">{{list.name}}</a>
+            </td>
+            <td>{{list.xy.length}}</td>
+            <td align="center">
+                <a ng-click="editList(list._id)" class="btn btn-default"><em class="fa fa-pencil"></em></a>
+                <a ng-click="deleteList(list._id)" class="btn btn-danger"><em class="fa fa-trash"></em></a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
