@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({ limit: '5mb', extended: false  }));
 app.use(bodyParser.json(({limit: '5mb' })));
 
 
-app.use(express.static(path.join(__dirname, 'client')));
+ app.use(express.static(path.join(__dirname, 'client')));
 
 app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css'));
 app.use('/lib', express.static(__dirname + '/node_modules/angular'));
