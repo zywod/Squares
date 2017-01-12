@@ -27,7 +27,7 @@ app.use('/lib', express.static(__dirname + '/node_modules/angular-messages'));
 app.use('/lib', express.static(__dirname + '/node_modules/angular-ui-bootstrap/dist'));
 
 //use APi routes
-app.use('/api', routesApi);
+ app.use('/api', routesApi);
 
 
 app.use(function (req, res) {
