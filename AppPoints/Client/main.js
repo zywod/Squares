@@ -12,7 +12,8 @@
                 templateUrl: '/list/create_edit.view.html',
                 controller: 'listCreateEditCtrl',
                 resolve: {
-                    points: function (dataService, $route) {
+                      points: function (dataService, $route) {
+                      points: function (dataService, $route) {
                         return dataService.get({ list_id: $route.current.params.id });
                     }
                 }     
